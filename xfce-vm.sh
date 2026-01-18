@@ -60,5 +60,5 @@ $fi org.localsend.localsend_app | tee -a "$log_file"
 echo "##### COPY XFCE CONFIG #####" | tee -a "$log_file"
 
 cp -v Pictures/* ~/Pictures/ | tee -a "$log_file"
-cp -Rv xfce4 ~/.config/ | tee -a "$log_file"
+cp -rfv xfce4 ~/.config/ | tee -a "$log_file"
 
