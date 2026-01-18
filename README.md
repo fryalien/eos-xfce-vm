@@ -7,7 +7,7 @@ cd ~/Downloads
 ```
 
 ```
-git clone repo
+git clone https://github.com/fryalien/eos-xfce-vm.git
 ```
 
 >Start the installation script.
