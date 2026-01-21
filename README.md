@@ -17,5 +17,5 @@ cd ~/Downloads/eos-xfce-vm
 >Start the installation script.
 
 ```
-./xfce-vm.sh
+./start.sh
 ```
