@@ -24,7 +24,6 @@
         <value type="int" value="6"/>
         <value type="int" value="8"/>
         <value type="int" value="9"/>
-        <value type="int" value="10"/>
         <value type="int" value="11"/>
         <value type="int" value="13"/>
         <value type="int" value="7"/>
@@ -44,6 +43,8 @@
         <value type="int" value="16"/>
         <value type="int" value="15"/>
         <value type="int" value="19"/>
+        <value type="int" value="10"/>
+        <value type="int" value="20"/>
         <value type="int" value="12"/>
       </property>
       <property name="enable-struts" type="bool" value="true"/>
@@ -72,6 +73,9 @@
         <value type="string" value=""/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="S_u2WjNEu_"/>
+        <value type="string" value="vvjXto49FB"/>
+        <value type="string" value="SFv8pxxdof"/>
         <value type="string" value="UyXMGCO7Hq"/>
         <value type="string" value="KMdBlx9ZBA"/>
         <value type="string" value="9aBDmpqqga"/>
@@ -84,7 +88,6 @@
       <property name="show-notifications" type="bool" value="true"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
@@ -128,9 +131,8 @@
       <property name="menu-height" type="int" value="465"/>
       <property name="menu-opacity" type="int" value="98"/>
       <property name="recent" type="array">
-        <value type="string" value="org.kde.kbackup.desktop"/>
-        <value type="string" value="org.dupot.easyflatpak.desktop"/>
         <value type="string" value="com.github.tchx84.Flatseal.desktop"/>
+        <value type="string" value="org.dupot.easyflatpak.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="org.xfce.mousepad.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
@@ -202,5 +204,9 @@
         <value type="string" value="17687300223.desktop"/>
       </property>
     </property>
-  </property>
-</channel>
+    <property name="plugin-10" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17689958651.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-20" type="str

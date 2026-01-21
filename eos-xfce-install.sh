@@ -13,7 +13,9 @@ sh ./eos-apps.sh
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./flatpak-apps.sh 
+sh ./flatpak-apps.sh
+
+flatpak override --user --filesystem=~/BIGDATA
 
 ######################################################################################
 
