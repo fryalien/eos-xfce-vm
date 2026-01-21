@@ -3,7 +3,7 @@
 >Clone the repo.
 
 ```
-cd ~/Downloads
+mkdir -p ~/Public && cd ~/Public
 ```
 
 ```
@@ -11,7 +11,7 @@ git clone https://github.com/fryalien/eos-xfce-vm.git
 ```
 
 ```
-mkdir -p ~/Public && cd ~/Public
+cd eos-xfce-vm
 ```
 
 >Start the installation script.
