@@ -15,7 +15,7 @@ echo "##### INSTALL FLATPAK #####"
 
 sh ./flatpak-apps.sh
 
-flatpak override --user --filesystem=~/BIGDATA
+flatpak override --user --filesystem=home
 
 ######################################################################################
 
