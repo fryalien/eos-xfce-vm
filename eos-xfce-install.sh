@@ -31,6 +31,16 @@ sudo usermod -s /usr/bin/fish $user
 
 ######################################################################################
 
+echo "##### SETUP FASTFETCH #####"
+
+mkdir -v ~/.config/fastfetch
+
+curl -L \
+https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/config-simple.jsonc \
+-o ~/.config/fastfetch/config.jsonc
+
+######################################################################################
+
 echo "##### COPY XFCE CONFIG #####"
 
 cp -v Pictures/* ~/Pictures/
