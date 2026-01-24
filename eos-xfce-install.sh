@@ -41,10 +41,9 @@ https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/co
 
 ######################################################################################
 
-echo "##### COPY XFCE CONFIG #####"
+echo "##### SETUP MICRO EDITOR #####"
 
-cp -v Pictures/* ~/Pictures/
-cp -rfv xfce4 ~/.config/
+sh ./set-micro-theme.sh
 
 ######################################################################################
 
@@ -54,3 +53,18 @@ sudo ufw disable
 sudo cp -fv ./firewall/user.rules /etc/ufw/
 sudo cp -fv ./firewall/user6.rules /etc/ufw/
 sudo ufw enable
+
+######################################################################################
+
+echo "##### SETUP WALLPAPER #####"
+
+cp -v Pictures/* ~/Pictures/
+
+echo "##### COPY XFCE CONFIG #####"
+
+cp -rfv ./xfce-config/xfce4 ~/.config/
+#cp -rfv ./xfce-config/Thunar ~/.config/
+
+#echo "##### LOAD vm PANEL CONFIG #####"
+
+#./xfce-config/xfce4-panel-profiles load imac27-xfce-panels.tar.bz2
