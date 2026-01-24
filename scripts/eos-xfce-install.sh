@@ -18,7 +18,11 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s
 
 echo "##### DISABLE LOCK AND IDLE #####"
 
-xfconf-query -c xfce4-screensaver -p /idle-activation-enabled -s false
+xfconf-query -c xfce4-screensaver -p /lock/enabled -s false
+xfconf-query -c xfce4-screensaver -p /saver/mode -s 0
+xfconf-query -c xfce4-screensaver -p /saver/idle-activation/delay -s 0
+xfconf-query -c xfce4-screensaver -p /lock/sleep-activation -s false
+
 
 ######################################################################################
 
