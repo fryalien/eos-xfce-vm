@@ -16,6 +16,12 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s
 
 ######################################################################################
 
+echo "##### DISABLE LOCK AND IDLE #####"
+
+xfconf-query -c xfce4-screensaver -p /idle-activation-enabled -s false
+
+######################################################################################
+
 echo "##### STOP PERIODIC PING #####"
 
 ./scripts/stop-ping.sh
