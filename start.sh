@@ -14,7 +14,7 @@ log="./install-$(date +%Y-%m-%d_%H:%M).log"
 
 echo "##### SET SUDO 3 hrs #####"
 
-./set-sudo-timeout.sh
+./scripts/set-sudo-timeout.sh
 
 ######################################################################################
 
@@ -24,9 +24,15 @@ xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s
 
 ######################################################################################
 
+echo "##### STOP PERIODIC PING #####"
+
+./scripts/stop-ping.sh
+
+######################################################################################
+
 echo "##### START INSTALLATION #####"
 
-./eos-xfce-install.sh  | tee -a "$log"
+./scripts/eos-xfce-install.sh  | tee -a "$log"
 
 ######################################################################################
 

@@ -4,14 +4,14 @@ user="y" # CHANGE THIS TO YOUR USER
 
 echo "##### INSTALL DISTRO APPS #####"
 
-sh ./eos-apps.sh 
+sh ./scripts/eos-apps.sh 
 
 ######################################################################################
 
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./flatpak-apps.sh
+sh ./scripts/flatpak-apps.sh
 
 flatpak override --user --filesystem=home
 
@@ -41,7 +41,7 @@ https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/co
 
 echo "##### SETUP MICRO EDITOR #####"
 
-sh ./set-micro-theme.sh
+sh ./scripts/set-micro-theme.sh
 
 ######################################################################################
 
