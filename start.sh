@@ -12,4 +12,12 @@ echo "##### SET SUDO 3 hrs #####"
 
 ######################################################################################
 
+echo "##### SET PRESENTATION MODE ON #####"
+
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/presentation-mode -s true
+
+######################################################################################
+
+echo "##### START INSTALLATION #####"
+
 ./eos-xfce-install.sh  | tee -a "$log"
