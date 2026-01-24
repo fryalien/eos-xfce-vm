@@ -66,4 +66,4 @@ cp -rfv ./xfce-config/gth-3.0 ~/.config/
 
 echo "##### LOAD vm PANEL CONFIG #####"
 
-xfce-config/xfce4-panel-profiles load ./xfce-config/vm-xfce-panel.tar.bz2
+xfce4-panel-profiles load ./xfce-config/vm-xfce-panel.tar.bz2
