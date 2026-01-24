@@ -2,8 +2,6 @@
 
 user="y" # CHANGE THIS TO YOUR USER
 
-######################################################################################
-
 echo "##### INSTALL DISTRO APPS #####"
 
 sh ./eos-apps.sh 
@@ -56,15 +54,16 @@ sudo ufw enable
 
 ######################################################################################
 
-echo "##### SETUP WALLPAPER #####"
+echo "##### COPY WALLPAPERS #####"
 
 cp -v Pictures/* ~/Pictures/
 
 echo "##### COPY XFCE CONFIG #####"
 
 cp -rfv ./xfce-config/xfce4 ~/.config/
-#cp -rfv ./xfce-config/Thunar ~/.config/
+cp -rfv ./xfce-config/Thunar ~/.config/
+cp -rfv ./xfce-config/gth-3.0 ~/.config/
 
-#echo "##### LOAD vm PANEL CONFIG #####"
+echo "##### LOAD vm PANEL CONFIG #####"
 
-#./xfce-config/xfce4-panel-profiles load imac27-xfce-panels.tar.bz2
+xfce-config/xfce4-panel-profiles load ./xfce-config/vm-xfce-panels.tar.bz2

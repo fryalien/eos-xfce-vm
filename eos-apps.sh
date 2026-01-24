@@ -15,6 +15,8 @@ $in fish
 $in flatpak
 
 $in jq
+$in xfce4-panel-profiles
+$in xfce4-xkb-plugin
 
 $in bat
 $in btop
@@ -33,6 +35,8 @@ $in micro
 $in ncdu
 $in neovim
 $in p7zip
+$in partitionmanager
+$in rate-mirrors
 $in ripgrep
 $in rsync
 $in tldr
@@ -46,4 +50,3 @@ $in zoxide
 # AUR
 $aur ttf-ms-fonts
 $aur sublime-text-4
-
