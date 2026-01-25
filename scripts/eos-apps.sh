@@ -8,16 +8,19 @@ sudo pacman -Rns --noconfirm meld
 
 in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
-user="y"
+user="y" #CHANGE TO YOUR USER
 
 # INSTALL PACKAGES
 
 $in fish
 $in flatpak
+$in ufw gufw
 
 $in jq
 $in xfce4-panel-profiles
 $in xfce4-xkb-plugin
+$in xfce4-sensors-plugin
+$in xfce4-eyes-plugin
 
 $in bat
 $in btop
@@ -32,6 +35,8 @@ $in git
 $in gparted
 $in gzip
 $in imagemagick
+$in kbackup
+$in kcalc
 $in micro
 $in ncdu
 $in neovim
