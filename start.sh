@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
 
 # INSTALL EVERYTHING AND MAKE A LOG OF IT
 

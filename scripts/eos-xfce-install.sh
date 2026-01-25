@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/co
 
 echo "##### SETUP MICRO EDITOR #####"
 
-sh ./scripts/set-micro-theme.sh
+./scripts/set-micro-theme.sh
 
 ######################################################################################
 
