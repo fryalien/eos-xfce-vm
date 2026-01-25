@@ -6,7 +6,7 @@ user="y" # CHANGE THIS TO YOUR USER
 
 echo "##### SET SUDO 3 hrs #####"
 
-./scripts/set-sudo-timeout.sh
+./set-sudo-timeout.sh
 
 ######################################################################################
 
@@ -32,20 +32,20 @@ xfconf-query -c xfce4-screensaver -p /lock/sleep-activation -s false
 
 echo "##### STOP PERIODIC PING #####"
 
-./scripts/stop-ping.sh
+./stop-ping.sh
 
 ######################################################################################
 
 echo "##### INSTALL DISTRO APPS #####"
 
-sh ./scripts/eos-apps.sh 
+sh ./eos-apps.sh 
 
 ######################################################################################
 
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./scripts/flatpak-apps.sh
+sh ./flatpak-apps.sh
 
 flatpak override --user --filesystem=home
 
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/co
 
 echo "##### SETUP MICRO EDITOR #####"
 
-sh ./scripts/set-micro-theme.sh
+./set-micro-theme.sh
 
 ######################################################################################
 
