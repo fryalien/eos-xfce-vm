@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 # REMOVE FROM EOS
 
 sudo pacman -Rns --noconfirm firefox
