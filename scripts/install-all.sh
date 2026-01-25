@@ -49,6 +49,10 @@ sh ./scripts/flatpak-apps.sh
 
 flatpak override --user --filesystem=home
 
+echo "##### COPY FLATPAK CONFIG #####"
+
+sh ./scripts/flatpak-config.sh
+
 ######################################################################################
 
 echo "##### SETUP FISH #####"
