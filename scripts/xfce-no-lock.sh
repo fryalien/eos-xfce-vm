@@ -1,3 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
 echo "#####  Disable screensaver #####"
 xfconf-query -c xfce4-screensaver -p /saver/enabled -t bool -s false --create
 xfconf-query -c xfce4-screensaver -p /saver/idle-activation/enabled -t bool -s false --create

@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
 
 CONF_DIR="/etc/NetworkManager/conf.d"
 CONF_FILE="$CONF_DIR/20-connectivity.conf"

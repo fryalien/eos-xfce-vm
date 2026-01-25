@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
 
 # Set sudo password timeout to 3 hours (180 minutes)
 TIMEOUT=180
