@@ -16,7 +16,7 @@ date  | tee -a "$log"
 
 echo "##### START INSTALLATION #####"  | tee -a "$log"
 
-./scripts/eos-xfce-install.sh 2>&1  | tee -a "$log"
+./scripts/install-all.sh 2>&1  | tee -a "$log"
 
 ######################################################################################
 
