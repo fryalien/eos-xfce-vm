@@ -72,15 +72,15 @@ echo "##### SETUP MICRO EDITOR #####"
 echo "##### SETUP FIREWALL #####"
 
 sudo ufw disable
-sudo cp -fv ./firewall/user.rules /etc/ufw/
-sudo cp -fv ./firewall/user6.rules /etc/ufw/
-sudo ufw enable
+sudo cp -fv ./config/firewall/user.rules /etc/ufw/
+sudo cp -fv ./config/firewall/user6.rules /etc/ufw/
+sudo ufw --force enable
 
 ######################################################################################
 
 echo "##### COPY WALLPAPERS #####"
 
-cp -v Pictures/* ~/Pictures/
+cp -v ./config/Pictures/* ~/Pictures/
 
 echo "##### COPY XFCE CONFIG #####"
 

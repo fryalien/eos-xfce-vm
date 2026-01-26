@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 # INSTALL EVERYTHING AND MAKE A LOG OF IT
 
 log="./install-$(date +%Y-%m-%d_%H:%M).log"
