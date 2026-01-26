@@ -65,7 +65,7 @@ echo "##### SETUP FIREWALL #####"
 
 echo "##### COPY WALLPAPERS #####"
 
-cp -v ./config/Pictures/* ~/Pictures/
+cp -v ./Pictures/* ~/Pictures/
 
 echo "##### COPY XFCE CONFIG #####"
 
