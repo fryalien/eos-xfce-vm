@@ -46,6 +46,7 @@ $in rate-mirrors
 $in ripgrep
 $in rsync
 $in tldr
+$in tree
 $in tmux
 $in unace
 $in unrar
