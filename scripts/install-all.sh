@@ -1,9 +1,5 @@
 #!/bin/bash
 
-user="y" # CHANGE THIS TO YOUR USER
-
-######################################################################################
-
 echo "##### SET SUDO 3 hrs #####"
 
 ./scripts/set-sudo-timeout.sh
