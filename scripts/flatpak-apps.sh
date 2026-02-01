@@ -12,3 +12,5 @@ $fi org.dupot.easyflatpak
 $fi org.flameshot.Flameshot
 $fi org.geany.Geany
 $fi org.localsend.localsend_app
+
+flatpak override --user --filesystem=home

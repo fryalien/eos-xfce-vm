@@ -29,33 +29,21 @@ echo "##### INSTALL FLATPAK #####"
 
 sh ./scripts/flatpak-apps.sh
 
-flatpak override --user --filesystem=home
-
 echo "##### COPY FLATPAK CONFIG #####"
 
-sh ./scripts/flatpak-config.sh
+./scripts/flatpak-config.sh
 
 ######################################################################################
 
 echo "##### SETUP FISH #####"
 
-mkdir -v ~/.config/fish
-
-curl -L \
-https://raw.githubusercontent.com/fryalien/dotfiles/main/fish/config.fish \
--o ~/.config/fish/config.fish
-
-sudo usermod -s /usr/bin/fish $user
+./scripts/set-fish-config.sh
 
 ######################################################################################
 
 echo "##### SETUP FASTFETCH #####"
 
-mkdir -v ~/.config/fastfetch
-
-curl -L \
-https://raw.githubusercontent.com/fryalien/dotfiles/refs/heads/main/fastfetch/config-simple.jsonc \
--o ~/.config/fastfetch/config.jsonc
+./scripts/set-fastfetch.sh
 
 ######################################################################################
 
@@ -67,23 +55,14 @@ echo "##### SETUP MICRO EDITOR #####"
 
 echo "##### SETUP FIREWALL #####"
 
-sudo ufw disable
-sudo cp -fv ./firewall/user.rules /etc/ufw/
-sudo cp -fv ./firewall/user6.rules /etc/ufw/
-sudo ufw enable
+./scripts/set-firewall.sh
 
 ######################################################################################
 
 echo "##### COPY WALLPAPERS #####"
 
-cp -v Pictures/* ~/Pictures/
+cp -v ./Pictures/* ~/Pictures/
 
 echo "##### COPY XFCE CONFIG #####"
 
-cp -rfv ./xfce-config/xfce4 ~/.config/
-cp -rfv ./xfce-config/Thunar ~/.config/
-cp -rfv ./xfce-config/gtk-3.0 ~/.config/
-
-echo "##### LOAD vm PANEL CONFIG #####"
-
-xfce4-panel-profiles load ./xfce-config/vm-xfce-panel.tar.bz2
+./scripts/xfce-config.sh
