@@ -2,11 +2,15 @@
 
 set -e
 
-# Set sudo password timeout to 3 hours (180 minutes)
-TIMEOUT=180
-FILE="/etc/sudoers.d/timeout"
+FILE=/etc/sudoers.d/timeout
 
-echo "Defaults timestamp_timeout=${TIMEOUT}" | sudo tee "$FILE" > /dev/null
+sudo tee "$FILE" >/dev/null <<'EOF'
+Defaults timestamp_type=tty
+Defaults timestamp_timeout=180
+EOF
+
 sudo chmod 440 "$FILE"
 
-echo "Sudo password timeout set to ${TIMEOUT} minutes (3 hours)."
+sudo -k
+
+echo "Sudo password timeout set to 180 minutes (3 hours)."
