@@ -4,6 +4,9 @@ in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
 rmp="sudo pacman -Rns --noconfirm"
 
+# yay not asking anoying questions
+yay --save --answerdiff None --answerclean None --removemake  
+
 echo "REMOVE FROM EOS"
 
 $rmp firefox
