@@ -8,7 +8,6 @@ sudo pacman -Rns --noconfirm meld
 
 in="sudo pacman -S --noconfirm --needed"
 aur="yay -S --noconfirm --needed"
-user="y" #CHANGE TO YOUR USER
 
 # INSTALL PACKAGES
 
@@ -55,7 +54,7 @@ $in yt-dlp
 $in zoxide
 
 $in wireshark-qt
-sudo usermod -aG wireshark $user
+sudo usermod -aG wireshark $USER
 
 # AUR
 $aur ttf-ms-fonts
