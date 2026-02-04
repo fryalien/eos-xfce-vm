@@ -20,14 +20,14 @@ echo "##### STOP PERIODIC PING #####"
 
 echo "##### INSTALL DISTRO APPS #####"
 
-sh ./scripts/eos-apps.sh 
+./scripts/eos-apps.sh 
 
 ######################################################################################
 
 
 echo "##### INSTALL FLATPAK #####"
 
-sh ./scripts/flatpak-apps.sh
+./scripts/flatpak-apps.sh
 
 echo "##### COPY FLATPAK CONFIG #####"
 
@@ -64,9 +64,12 @@ echo "##### SETUP NTP #####"
 ./scritps/set-new-ntp.sh
 
 ######################################################################################
+
 echo "##### COPY WALLPAPERS #####"
 
 cp -v ./Pictures/* ~/Pictures/
+
+######################################################################################
 
 echo "##### COPY XFCE CONFIG #####"
 

@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-set -e
+#!/bin/bash
 
 FILE=/etc/sudoers.d/timeout
 
