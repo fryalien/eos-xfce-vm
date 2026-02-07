@@ -61,5 +61,6 @@ $in wireshark-qt
 sudo usermod -aG wireshark $USER
 
 echo "AUR"
+$aur ttf-hack-nerd
 $aur ttf-ms-fonts
 $aur sublime-text-4
